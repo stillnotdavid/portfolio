@@ -19,7 +19,6 @@ import profile from "../data/profile.json";
 const IndexPage = () => {
   return (
     <Layout>
-      <title>David Le Portfolio</title>
       <section className="hero" id="about">
         <div className="container hero__container">
           <div className="hero__text">

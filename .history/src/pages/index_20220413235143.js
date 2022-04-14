@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Carousel } from "@trendyol-js/react-carousel";
 import {
   Layout,
   Button,
@@ -15,11 +16,17 @@ import projects from "../data/projects.json";
 
 import profile from "../data/profile.json";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import {
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
+
 // markup
 const IndexPage = () => {
   return (
     <Layout>
-      <title>David Le Portfolio</title>
       <section className="hero" id="about">
         <div className="container hero__container">
           <div className="hero__text">

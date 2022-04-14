@@ -33,6 +33,7 @@ class Header extends React.Component {
     return (
       <header className={`header ${this.state.sticky && "header--sticky"}`}>
         <div className="header__container">
+          <title>David Le Portfolio</title>
           <Logo />
           <Nav />
         </div>
