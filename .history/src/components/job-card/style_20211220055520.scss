@@ -1,0 +1,57 @@
+@import '../../styles/variables.scss';
+
+.job-card {
+  height: 320px;
+  max-width: 230px;
+  border-radius: 4px;
+  margin: 0 $spacing-md;
+  @include shadow-md;
+
+  &__header {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-weight: $font-bold;
+    padding: $spacing-lg;
+    text-align: center;
+    background: rgba(0, 0, 0, .25);
+  }
+
+  &__body {
+    text-align: center;
+    padding: $spacing-lg $spacing-xl+10;
+  }
+
+  &__logo {
+    object-fit: cover;
+    margin: 50px 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: $font-lg;
+    font-weight: $font-bold;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__time {
+    color: $white-50;
+    font-size: $font-md;
+    margin-bottom: 40px;
+  }
+
+  &__more {
+    opacity: .5;
+  }
+
+  &--mt {
+    background: repeating-linear-gradient(45deg,
+        $mt,
+        $mt 4px,
+        $mt 4px,
+        darken($mt, 3%) 6px);
+  }
+}

@@ -1,0 +1,16 @@
+@import '../../styles/variables.scss';
+
+.timeline {
+  background-image: url(../../images/resume-background.png);
+  background-size: cover;
+  min-height: 500px;
+  color: white;
+
+  &__container {
+    margin: 0 -60px;
+  }
+
+  &__jobs {
+    display: flex;
+  }
+}

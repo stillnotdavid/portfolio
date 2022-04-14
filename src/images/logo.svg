@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="248px" height="64px" viewBox="0 0 248 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 5</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tablet-Copy-3" transform="translate(-476.000000, -40.000000)">
+            <g id="Group-3" transform="translate(443.000000, 40.000000)">
+                <g id="Group-5" transform="translate(33.000000, 0.000000)">
+                    <text id="DAVID-LE" font-family="Helvetica" font-size="36" font-weight="normal" letter-spacing="2">
+                        <tspan x="38" y="35" fill="#333333">DAVID </tspan>
+                        <tspan x="167.369141" y="35" fill="#999999">L</tspan>
+                        <tspan x="189.390625" y="35" fill="#999999">E</tspan>
+                    </text>
+                    <text id="User-Experience-Desi" font-family="Roboto-Medium, Roboto" font-size="12" font-weight="400" letter-spacing="1" fill="#AAAAAA">
+                        <tspan x="0" y="61">User Experience Design &amp; Development</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

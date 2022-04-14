@@ -1,0 +1,8 @@
+@import '../../styles/variables.scss';
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: cener;
+  padding: $spacing-xl 0;
+}

@@ -1,0 +1,51 @@
+@import "../../styles/variables.scss";
+
+.portfolio {
+  min-height: 600px;
+  background-image: url("../images/cards.png");
+  background-size: cover;
+  color: white;
+
+  &__projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px 0;
+
+    @media (min-width: $screen-md) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin: 40px -115px;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__carousel {
+    > div {
+      &:first-child,
+      &:last-child {
+        display: flex;
+        align-items: center;
+        padding: $spacing-lg;
+        cursor: pointer;
+        color: $gray-medium;
+        transition: 300ms;
+        &:hover {
+          color: white;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+.project {
+  &__gallery {
+    > div {
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+}

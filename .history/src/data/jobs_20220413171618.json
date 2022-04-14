@@ -1,0 +1,47 @@
+{
+  "jobs": [
+    {
+      "type": "Full-time",
+      "title": "Sr. UX Engineer, AVP",
+      "time": "Nov 2018 — present",
+      "logo": "../../mt.png",
+      "name": "mt",
+      "more": "Lead front-end developer of Currency, a custom in-house design system used across entire bank’s design and engineering teams.",
+      "current": true
+    },
+    {
+      "type": "Contractor",
+      "title": "UX Engineer",
+      "time": "Apr 2017 — present",
+      "logo": "../../esl.png",
+      "name": "esl",
+      "more": "Lead designer for various customer facing products and web applications for a large e-Sports company.",
+      "current": true
+    },
+    {
+      "type": "Freelancer",
+      "title": "Front-end Developer",
+      "time": "Nov 2018 — present",
+      "logo": "../../cw.png",
+      "name": "cw",
+      "more": "Freelance front-end developer for miscellaneous client and/or internal projects.",
+      "current": true
+    },
+    {
+      "type": "Full-time",
+      "title": "Senior UX Designer",
+      "time": "Jul 2015 — Nov 2018",
+      "logo": "../../sync.png",
+      "name": "sync",
+      "current": false
+    },
+    {
+      "type": "Full-time",
+      "title": "Digital Media Designer",
+      "time": "Jan 2013 — Jul 2015",
+      "logo": "../../ub.png",
+      "name": "ub",
+      "current": false
+    }
+  ]
+}

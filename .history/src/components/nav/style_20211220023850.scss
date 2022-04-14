@@ -1,0 +1,12 @@
+.nav {
+  &__links {
+    list-style-type: none;
+    display: flex;
+  }
+
+  &__item {}
+
+  &__link {
+    padding: $spacing-lg;
+  }
+}

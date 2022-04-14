@@ -1,0 +1,28 @@
+@import "../../styles/variables.scss";
+
+.project-card {
+  min-height: 300px;
+  background: rgba(0, 0, 0, 0.5);
+  border: solid 1px $gray-dark;
+  border-radius: 4px;
+  @include shadow-md;
+
+  &__header {
+    padding: $spacing-xl;
+  }
+
+  &__roles {
+    display: flex;
+  }
+
+  &__role {
+    font-size: $font-sm;
+    font-weight: $font-semibold;
+    color: white;
+    background: $gray-medium;
+    padding: $spacing-md $spacing-lg + 4;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+}

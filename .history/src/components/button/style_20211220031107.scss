@@ -1,0 +1,10 @@
+@import '../../styles/variables.scss';
+
+.button {
+  display: inline-block;
+  text-transform: uppercase;
+  color: $gray;
+  background: white;
+  font-weight: $font-bold;
+  padding: $spacing-lg $spacing-xl;
+}

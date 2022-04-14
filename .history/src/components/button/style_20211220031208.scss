@@ -1,0 +1,18 @@
+@import '../../styles/variables.scss';
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: $gray;
+  background: white;
+  font-weight: $font-bold;
+  padding: $spacing-lg $spacing-xl;
+  letter-spacing: .5px;
+  margin: $spacing-xl 0;
+
+  &--primary {
+    color: $gray;
+    background: white;
+  }
+}

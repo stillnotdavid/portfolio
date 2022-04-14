@@ -1,0 +1,31 @@
+@import '../../styles/variables.scss';
+
+.nav {
+  padding: $spacing-xl 0;
+
+  &__links {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+  }
+
+  &__item {}
+
+  &__link {
+    padding: $spacing-sm;
+    text-decoration: none;
+    color: $gray;
+    font-size: $font-md;
+    font-weight: $font-semibold;
+
+    @media (min-width: $screen-sm) {
+      padding: $spacing-lg;
+    }
+
+    &:hover {
+      background: $gray;
+      color: white;
+      border-radius: 50px;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@import '../../styles/variables.scss';
+
+$_avatar-size: 125px;
+
+.profile-card {
+  position: relative;
+  z-index: 1;
+  min-width: 320px;
+  background: white;
+
+  &__header {
+    background: $gray-lightest;
+    display: flex;
+    align-items: center;
+
+    &-image {
+      height: $_avatar-size;
+      width: $_avatar-size;
+      border-radius: 50%;
+      object-fit: cover;
+      border: solid 5px $gray-light;
+
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+
+    &-name {
+      color: $gray-dark;
+      font-size: $font-xl;
+      font-weight: $font-bold;
+      margin-bottom: $spacing-sm;
+    }
+
+    &-location {
+      color: $gray;
+      font-size: $font-sm;
+    }
+  }
+}

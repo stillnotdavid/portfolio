@@ -1,0 +1,32 @@
+@import '../../styles/variables.scss';
+
+$_avatar-size: 125px;
+
+.profile-card {
+  position: relative;
+  z-index: 1;
+  min-width: 320px;
+  background: white;
+
+  &__header {
+    background: $gray-lightest;
+
+    &-image {
+      height: $_avatar-size;
+      width: $_avatar-size;
+      border-radius: 50%;
+      object-fit: cover;
+      border: solid 5px $gray-light;
+
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+
+    &-name {
+      color: $gray;
+      font-size: $font-lg;
+    }
+  }
+}

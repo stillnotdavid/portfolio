@@ -1,0 +1,77 @@
+{
+  "projects": [
+    {
+      "name": "Currency Design System",
+      "description": "Currency is M&T Bank's official design system used to provide design and engineering consistency across entire bank.",
+      "roles": [
+        "UI Design",
+        "UX Design",
+        "Visual Design",
+        "Front-end Development"
+      ],
+      "image": "../../currency.png",
+      "to": "https://currency-design-system.netlify.app/"
+    },
+    {
+      "name": "The Edward Hotel",
+      "description": "A beautiful boutique hotel located in Buffalo, NY. Redesigned and built using GatsbyJS.",
+      "roles": [
+        "UI Design",
+        "UX Design",
+        "Visual Design",
+        "Front-end Development"
+      ],
+      "image": "../../hotel.png",
+      "to": "https://theedwardbuffalo.netlify.app/"
+    },
+    {
+      "name": "ESEA Game Client",
+      "description": "ESEA's game client used by thousands of competitive Counter-Strike: Global Offensive players.",
+      "roles": [
+        "UI Design",
+        "UX Design",
+        "Product Design",
+        "Visual Design",
+        "Front-end Development"
+      ],
+      "image": "../../esea-client.png",
+      "to": "/projects/esea-client"
+    },
+    {
+      "name": "ESEA Landing Page",
+      "description": "Lead the development of Currency, M&T’s official design system used to provide design and engineering consistency across entire bank.",
+      "roles": [
+        "UI Design",
+        "UX Design",
+        "Visual Design",
+        "Front-end Development"
+      ],
+      "image": "../../esea-landing.jpg",
+      "to": "https://play.esea.net/subscribe"
+    },
+    {
+      "name": "ESEA Homepage",
+      "description": "Lead the development of Currency, M&T’s official design system used to provide design and engineering consistency across entire bank.",
+      "roles": [
+        "UI Design",
+        "UX Design",
+        "Visual Design",
+        "Front-end Development"
+      ],
+      "image": "../../esea-home.jpg",
+      "to": "https://play.esea.net"
+    },
+    {
+      "name": "CSGOStats",
+      "description": "Lead the development of Currency, M&T’s official design system used to provide design and engineering consistency across entire bank.",
+      "roles": [
+        "UI Design",
+        "UX Design",
+        "Visual Design",
+        "Front-end Development"
+      ],
+      "image": "../../csgostats.jpg",
+      "to": "/projects/csgostats"
+    }
+  ]
+}

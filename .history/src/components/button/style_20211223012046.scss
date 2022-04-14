@@ -1,0 +1,35 @@
+@import "../../styles/variables.scss";
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: $font-bold;
+  padding: $spacing-lg $spacing-xl;
+  letter-spacing: 0.5px;
+  margin: $spacing-xl 0;
+  text-decoration: none;
+  transition: 300ms;
+  text-shadow: none;
+  @include shadow-sm();
+
+  &--primary {
+    color: $gray-dark;
+    background: white;
+
+    &:hover {
+      color: white;
+      background: $gray-dark;
+      transform: translateY(-5px);
+      @include shadow-md();
+    }
+  }
+
+  &--secondary {
+    background: $gray-dark;
+    color: white;
+    font-size: $font-md;
+    letter-spacing: 1px;
+    padding: $spacing-lg $spacing-xl + 8;
+  }
+}

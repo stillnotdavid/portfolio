@@ -1,0 +1,100 @@
+@import "../../styles/variables.scss";
+
+$_avatar-size: 125px;
+
+.profile-card {
+  position: relative;
+  z-index: 1;
+  min-width: 320px;
+  background: white;
+  border-radius: 4px;
+  margin-bottom: -120px;
+  @include shadow-md();
+
+  &__header {
+    background: $gray-lightest;
+    display: flex;
+    align-items: center;
+    border-radius: 4px 4px 0 0;
+    padding: $spacing-md 0;
+
+    &-image {
+      height: $_avatar-size;
+      width: $_avatar-size;
+      border-radius: 50%;
+      object-fit: cover;
+      border: solid 5px $gray-light;
+      margin: -$spacing-xl $spacing-lg;
+
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+
+    &-name {
+      color: $gray-dark;
+      font-size: $font-xl;
+      font-weight: $font-bold;
+      margin-bottom: $spacing-sm;
+    }
+
+    &-location {
+      color: $gray;
+      font-size: $font-sm;
+    }
+  }
+
+  &__body {
+    padding: $spacing-xl;
+    display: flex;
+    flex-direction: column;
+
+    &-facts {
+      margin-bottom: $spacing-lg;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &-category {
+      color: $gray;
+      font-size: $font-xs;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: $spacing-sm;
+    }
+
+    &-info {
+      color: $gray-dark;
+      font-size: $font-md;
+      font-weight: $font-semibold;
+    }
+  }
+
+  &__tldr {
+    color: $gray-dark;
+    font-size: $font-md;
+    font-weight: $font-bold;
+    margin: 0 0 $spacing-md auto;
+  }
+
+  &__switch {
+    background: $gray-light;
+    height: 15px;
+    width: 35px;
+    border-radius: 50px;
+    position: relative;
+
+    &-toggle {
+      background: $gray;
+      height: 20px;
+      width: 20px;
+      border-radius: 50px;
+      @include shadow-sm;
+      position: absolute;
+      right: 0;
+    }
+  }
+}

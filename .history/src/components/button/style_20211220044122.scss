@@ -1,0 +1,25 @@
+@import '../../styles/variables.scss';
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: $font-bold;
+  padding: $spacing-lg $spacing-xl;
+  letter-spacing: .5px;
+  margin: $spacing-xl 0;
+  text-decoration: none;
+  position: relative;
+  @include shadow-sm();
+
+  &--primary {
+    color: $gray-dark;
+    background: white;
+
+    &:hover {
+      color: white;
+      background: $gray-dark;
+      margin-top: -5px;
+    }
+  }
+}

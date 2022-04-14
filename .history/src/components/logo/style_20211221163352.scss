@@ -1,0 +1,9 @@
+@import '../../styles/variables.scss';
+
+.logo {
+  margin: $spacing-xl;
+
+  img {
+    width: 100%;
+  }
+}

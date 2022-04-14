@@ -1,0 +1,11 @@
+@import '../../styles/variables.scss';
+
+.job-card {
+  height: 320px;
+  background: green;
+  max-width: 230px;
+
+  &__header {
+    font-size: 11px;
+  }
+}

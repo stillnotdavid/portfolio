@@ -1,0 +1,15 @@
+@mixin shadow-sm() {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+@mixin shadow-md() {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+@mixin shadow-light() {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+@mixin text-shadow-sm() {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

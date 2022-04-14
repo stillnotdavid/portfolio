@@ -1,0 +1,24 @@
+@import '../../styles/variables.scss';
+
+.job-card {
+  height: 320px;
+  background-color: #007D52;
+  background: repeating-linear-gradient(45deg,
+      #606dbc,
+      #606dbc 4px,
+      #465298 4px,
+      #465298 8px);
+  max-width: 230px;
+  border-radius: 4px;
+  @include shadow-md;
+
+  &__header {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-weight: $font-bold;
+    padding: $spacing-lg;
+    text-align: center;
+    background: rgba(0, 0, 0, .25);
+  }
+}

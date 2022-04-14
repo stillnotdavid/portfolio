@@ -1,0 +1,43 @@
+@import "./screens";
+
+$font-xs: 10px;
+$font-sm: 12px;
+$font-md: 14px;
+$font-lg: 16px;
+$font-xl: 18px;
+
+$font-regular: 400;
+$font-semibold: 500;
+$font-bold: 700;
+
+h1 {
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: $spacing-md;
+  text-align: center;
+
+  @media (min-width: $screen-sm) {
+    font-size: 48px;
+  }
+
+  @media (min-width: $screen-md) {
+    font-size: 48px;
+    text-align: left;
+  }
+}
+
+h2 {
+  font-size: 30px;
+  margin: 0;
+
+  @media (min-width: $screen-sm) {
+    font-size: 36px;
+  }
+}
+
+p {
+  font-size: $font-xl;
+  margin-top: 0;
+  margin-bottom: $spacing-md;
+  line-height: 1.4;
+}

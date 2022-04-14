@@ -1,0 +1,18 @@
+$_avatar-size: 125px;
+
+.profile-card {
+  position: relative;
+  z-index: 1;
+
+  &__header {
+    &-image {
+      height: $_avatar-size;
+      width: $_avatar-size;
+      border-radius: 50%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

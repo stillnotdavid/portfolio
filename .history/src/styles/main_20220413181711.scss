@@ -1,0 +1,42 @@
+@import "./sections/hero.scss";
+@import "./sections/timeline.scss";
+@import "./sections/portfolio.scss";
+@import "./sections/contact.scss";
+
+h1 {
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: $spacing-md;
+
+  @media (min-width: $screen-sm) {
+    font-size: 48px;
+  }
+}
+
+h2 {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: $spacing-md;
+  text-align: center;
+
+  @media (min-width: $screen-sm) {
+    font-size: 36px;
+  }
+
+  @media (min-width: $screen-md) {
+    text-align: left;
+  }
+}
+
+p {
+  font-size: $font-xl;
+  margin-top: 0;
+  margin-bottom: $spacing-md;
+  line-height: 1.4;
+}
+
+.notification {
+  background: $gray-dark;
+  border: solid 1px $gray-medium;
+  padding: $spacing-lg;
+}

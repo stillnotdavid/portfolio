@@ -1,0 +1,103 @@
+@import '../../styles/variables.scss';
+
+@mixin background($color) {
+  background: repeating-linear-gradient(45deg,
+      $color,
+      $color 4px,
+      $color 4px,
+      darken($color, 3%) 6px);
+}
+
+.job-card {
+  height: 350px;
+  border-radius: 4px;
+  margin: $spacing-md $spacing-sm;
+  flex: 0 0 75%;
+  min-width: 210px;
+  transition: 300ms;
+  @include shadow-md;
+
+  @media (min-width: $screen-sm) {
+    flex: 0 0 48%;
+  }
+
+  @media (min-width: $screen-md) {
+    flex: 1 0 30%;
+    max-width: 260px;
+  }
+
+
+  @media (min-width: $screen-xl) {
+    flex: 1 0 17%;
+    max-width: 240px;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &__header {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: $font-bold;
+    padding: $spacing-lg;
+    text-align: center;
+    background: rgba(0, 0, 0, .15);
+  }
+
+  &__body {
+    text-align: center;
+    padding: $spacing-lg;
+  }
+
+  &__logo {
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+
+    img {
+      max-height: 40px;
+      max-width: 80%;
+    }
+  }
+
+  &__title {
+    font-size: $font-lg;
+    font-weight: $font-bold;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__time {
+    opacity: .5;
+    font-size: $font-md;
+    margin-bottom: 40px;
+  }
+
+  &__more {
+    opacity: .5;
+  }
+
+  &--mt {
+    @include background($mt);
+  }
+
+  &--esl {
+    @include background($esl);
+    color: black;
+  }
+
+  &--cw {
+    @include background($cw);
+  }
+
+  &--sync {
+    @include background($sync);
+  }
+
+  &--ub {
+    @include background($ub);
+  }
+}

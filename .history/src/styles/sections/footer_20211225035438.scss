@@ -1,0 +1,61 @@
+@import "../../styles/variables.scss";
+
+.contact {
+  color: white;
+
+  &:before {
+    background: #222;
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 400px;
+    z-index: -1;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__form {
+    background: $gray-lightest;
+    width: 450px;
+    padding: $spacing-xl + 16 $spacing-xl;
+    border-radius: 4px;
+    border: solid 1px #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: $spacing-xl 0;
+    @include shadow-light;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: $spacing-xl;
+      width: 100%;
+    }
+  }
+}
+
+.form {
+  &__label {
+    color: $gray-dark;
+    font-size: $font-md;
+    font-weight: $font-semibold;
+    margin-bottom: $spacing-md;
+    margin-left: $spacing-md;
+  }
+
+  &__input {
+    padding: $spacing-lg $spacing-lg + 4;
+    border: solid 1px #eee;
+    font-size: $font-md;
+    position: relative;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+
+    &::placeholder {
+      color: $gray-light;
+    }
+  }
+}

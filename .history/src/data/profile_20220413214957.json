@@ -1,0 +1,24 @@
+{
+  "facts": [
+    {
+      "category": "Specialization",
+      "info": "UX Design, SCSS, HTML, Javascript",
+      "longInfo": "As a UX Engineer, I'm proficient in both design and development. I specialize in user-centric, as well as visual and product design. On the engineering side, I focus on writing clean, efficient, and scalable SCSS, semantic HTML, and front-end Javascript, including libraries like ReactJS."
+    },
+    {
+      "category": "Tools of Choice",
+      "info": "Figma/Sketch, React, GatsbyJS",
+      "longInfo": "Sketch and Figma are my two tools of choice when it comes to UI Design. As for web development, I tend to favor GatsbyJS for its ability to build static webpages while utilizing React."
+    },
+    {
+      "category": "Interests",
+      "info": "Singing, Writing, Acting, Drawing, Chess",
+      "longInfo": "In my spare time, I'm passionate about writing, singing, and chess."
+    },
+    {
+      "category": "Education",
+      "info": "SUNY University at Buffalo",
+      "longInfo": "I graduated with a Bachelor of Arts in Media Studies at SUNY University at Buffalo in 2013."
+    }
+  ]
+}

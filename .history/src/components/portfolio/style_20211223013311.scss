@@ -1,0 +1,14 @@
+@import "../../styles/variables.scss";
+
+.portfolio {
+  min-height: 600px;
+  background-image: url("../../images/portfolio-background.png");
+  background-size: cover;
+  color: white;
+  margin-top: 40px;
+
+  &__projects {
+    display: flex;
+    margin: 0 -115px;
+  }
+}

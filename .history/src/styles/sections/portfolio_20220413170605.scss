@@ -1,0 +1,43 @@
+@import "../../styles/variables.scss";
+
+.portfolio {
+  min-height: 600px;
+  background-image: url("../images/cards.png");
+  background-size: contain;
+  color: white;
+
+  &__projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0;
+
+    @media (min-width: $screen-lg) {
+      margin: 40px -115px;
+    }
+  }
+
+  &__carousel {
+    > div {
+      &:first-child,
+      &:last-child {
+        display: flex;
+        align-items: center;
+        padding: $spacing-lg;
+        cursor: pointer;
+        color: $gray-medium;
+        transition: 300ms;
+        &:hover {
+          color: white;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+#tsparticles {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}

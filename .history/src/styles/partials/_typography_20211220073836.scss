@@ -1,0 +1,34 @@
+@import './screens';
+
+$font-xs: 10px;
+$font-sm: 12px;
+$font-md: 14px;
+$font-lg: 16px;
+$font-xl: 18px;
+
+$font-regular: 400;
+$font-semibold: 500;
+$font-bold: 700;
+
+
+h1 {
+  font-size: 48px;
+  margin-top: 0;
+  margin-bottom: $spacing-md;
+
+  @media (min-width: $screen-md) {
+    font-size: 36px;
+  }
+}
+
+h2 {
+  font-size: 36px;
+  margin: 0;
+}
+
+p {
+  font-size: $font-xl;
+  margin-top: 0;
+  margin-bottom: $spacing-md;
+  line-height: 1.4;
+}

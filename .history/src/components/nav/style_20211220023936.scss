@@ -1,0 +1,16 @@
+@import '../../styles/variables.scss';
+
+.nav {
+  &__links {
+    list-style-type: none;
+    display: flex;
+  }
+
+  &__item {
+    padding: $spacing-lg;
+  }
+
+  &__link {
+    padding: $spacing-lg;
+  }
+}

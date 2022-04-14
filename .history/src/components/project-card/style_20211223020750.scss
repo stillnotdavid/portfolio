@@ -1,0 +1,65 @@
+@import "../../styles/variables.scss";
+
+.project-card {
+  background: rgba(0, 0, 0, 0.5);
+  border: solid 1px $gray-dark;
+  border-radius: 4px;
+  // padding: $spacing-xl;
+  margin: $spacing-md;
+  flex: 0 0 100%;
+  @include shadow-md;
+
+  @media (min-width: $screen-lg) {
+    flex: 0 0 31%;
+  }
+
+  &__header {
+    padding: $spacing-md;
+  }
+
+  &__body {
+    padding: $spacing-xl;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__roles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__role {
+    font-size: $font-xs;
+    font-weight: $font-semibold;
+    color: white;
+    background: $gray-medium;
+    padding: $spacing-md $spacing-lg + 4;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0 $spacing-md $spacing-md 0;
+  }
+
+  &__name {
+    margin: $spacing-md 0;
+    font-weight: $font-semibold;
+    text-align: center;
+  }
+
+  &__description {
+    color: $gray;
+    font-size: $font-md;
+    margin-bottom: $spacing-xl;
+    text-align: center;
+  }
+
+  &__image {
+    max-width: 100%;
+    margin: $spacing-xl 0;
+    padding: $spacing-lg;
+  }
+}

@@ -1,0 +1,83 @@
+@import "../../styles/variables.scss";
+
+.project-card {
+  background: rgba(0, 0, 0, 0.5);
+  border: solid 1px $gray-dark;
+  border-radius: 4px;
+  // padding: $spacing-xl;
+  margin: $spacing-md;
+  flex: 0 0 100%;
+  @include shadow-md;
+
+  @media (min-width: $screen-lg) {
+    flex: 0 0 31%;
+  }
+
+  &__header {
+    padding: $spacing-xl $spacing-md;
+  }
+
+  &__body {
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: center;
+    padding: $spacing-lg;
+  }
+
+  &__roles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__role {
+    font-size: $font-xs;
+    font-weight: $font-semibold;
+    color: white;
+    background: $gray-medium;
+    padding: $spacing-md $spacing-lg + 4;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0 $spacing-md $spacing-md 0;
+
+    &--ui-design {
+      background: #813135;
+    }
+    &--ux-design {
+      background: #315081;
+    }
+    &--visual-design {
+      background: #31816b;
+    }
+    &--product-design {
+      background: #af8126;
+    }
+    &--fe-dev {
+      background: #483f80;
+    }
+    &--content {
+      background: #97954e;
+    }
+  }
+
+  &__name {
+    margin: $spacing-xl 0 0 0;
+    font-weight: $font-semibold;
+    text-align: center;
+  }
+
+  &__description {
+    color: $gray;
+    font-size: $font-md;
+    margin-bottom: $spacing-xl + 12;
+    text-align: center;
+    padding: $spacing-lg;
+  }
+
+  &__image {
+    max-width: 100%;
+  }
+}

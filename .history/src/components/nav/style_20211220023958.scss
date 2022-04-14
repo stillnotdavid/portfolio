@@ -1,0 +1,15 @@
+@import '../../styles/variables.scss';
+
+.nav {
+  &__links {
+    list-style-type: none;
+    display: flex;
+  }
+
+  &__item {}
+
+  &__link {
+    padding: $spacing-lg;
+    text-decoration: none;
+  }
+}
