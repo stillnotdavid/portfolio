@@ -21,7 +21,6 @@ class JobCard extends React.Component {
     return (
       <a
         // onClick={this.openCard}
-        href={this.props.link}
         className={`job-card job-card--${this.props.name} ${
           this.state.open && "job-card--open"
         }`}
