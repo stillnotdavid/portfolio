@@ -1,0 +1,15 @@
+.project {
+  &__company {
+    font-size: 32px;
+    font-weight: $font-bold;
+    color: $gray;
+  }
+
+  &__header {
+    padding: $spacing-xl 0;
+  }
+
+  &__info {
+    display: flex;
+  }
+}

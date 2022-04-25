@@ -1,0 +1,45 @@
+.project {
+  background: white;
+
+  h1 {
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  p,
+  li {
+    color: $gray-medium;
+  }
+
+  ul {
+    margin-bottom: 24px;
+  }
+
+  li {
+    line-height: 1.5;
+  }
+  &__company {
+    font-size: 32px;
+    font-weight: $font-bold;
+    color: $gray;
+  }
+
+  &__header {
+    padding: $spacing-xl 0;
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+    padding: $spacing-xl 0;
+  }
+}

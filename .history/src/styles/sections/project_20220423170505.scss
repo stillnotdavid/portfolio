@@ -1,0 +1,11 @@
+.project {
+  &__company {
+    font-size: 32px;
+    font-weight: $font-bold;
+    color: $gray-light;
+  }
+
+  &__header {
+    padding: $spacing-xl 0;
+  }
+}

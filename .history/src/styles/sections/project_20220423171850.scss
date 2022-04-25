@@ -1,0 +1,25 @@
+.project {
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+  &__company {
+    font-size: 32px;
+    font-weight: $font-bold;
+    color: $gray;
+  }
+
+  &__header {
+    padding: $spacing-xl 0;
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: $spacing-xl;
+    padding: $spacing-xl 0;
+  }
+}

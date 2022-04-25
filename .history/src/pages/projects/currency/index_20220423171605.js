@@ -1,0 +1,78 @@
+import * as React from "react";
+import { Logo } from "../../../components";
+import "./style.scss";
+import { useStaticQuery, graphql } from "gatsby";
+
+import "../../../styles/main.scss";
+
+// markup
+const ProjectPage = () => {
+  const { allFile } = useStaticQuery(
+    graphql`
+      query {
+        allFile(
+          sort: { fields: name, order: ASC }
+          filter: { relativeDirectory: { eq: "projects/csgostats" } }
+        ) {
+          edges {
+            node {
+              id
+              name
+              childImageSharp {
+                gatsbyImageData
+              }
+            }
+          }
+        }
+      }
+    `
+  );
+
+  return (
+    <div className="currency">
+      <header className={`header`}>
+        <div className="header__container">
+          <Logo />
+        </div>
+      </header>
+      <div className="project">
+        <div className="container">
+          <div className="project__hero"></div>
+          <div className="project__header">
+            <div className="project__name">
+              <div className="project__company">M&amp;T Bank</div>
+              <h1>Currency Design System</h1>
+            </div>
+            <div className="project__info">
+              <h2>Overview</h2>
+              <p>
+                Currency is the official design system of{" "}
+                <a href="https://mtb.com">M&amp;T Bank</a>, used by numerous
+                design and engineering teams. I joined the bank's Customer
+                Experience Design team in 2019 as the second UX Engineer on the
+                Design System team. For the last 3 years, my focus at M&amp;T
+                has been on building Currency from the ground up and continuing
+                to grow it, as the company considers it as its own product.
+              </p>
+              <h2>My Role</h2>
+              <p>
+                While my primary role is engineering lead, I have throughout the
+                years contributed to the following areas:
+              </p>
+              <h3>UI Design:</h3>
+              <ul>
+                <li>
+                  During it's inception, the team was small, so I filled the
+                  designer role for several components, as well as fully
+                  building the documentation site from scratch.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ProjectPage;
