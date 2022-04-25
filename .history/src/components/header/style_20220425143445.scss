@@ -1,8 +1,9 @@
-@import '../../styles/variables.scss';
+@import "../../styles/variables.scss";
 
 .header {
   width: 100%;
   background: white;
+  padding-top: $spacing-lg;
 
   &__container {
     display: flex;
@@ -16,22 +17,22 @@
     position: fixed;
     top: 0;
     z-index: 3;
+    padding-top: 0;
     @include shadow-md();
 
-
-    .header__container {
-      flex-direction: row;
-      justify-content: space-between;
+    @media (min-width: $screen-md) {
+      .header__container {
+        flex-direction: row;
+        justify-content: space-between;
+      }
     }
 
-    &+main {
-      padding-top: 191px;
+    & + main {
+      padding-top: 187px;
     }
 
     .logo {
       height: 50px;
     }
   }
-
-
 }
