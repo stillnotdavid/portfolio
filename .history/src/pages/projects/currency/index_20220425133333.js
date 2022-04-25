@@ -15,9 +15,7 @@ import prototypes from "../../../images/projects/currency/prototypes.png";
 import doc from "../../../images/projects/currency/docsite01.png";
 import doc2 from "../../../images/projects/currency/docsite02.png";
 import doc3 from "../../../images/projects/currency/docsite03.png";
-import doc4 from "../../../images/projects/currency/docsite04.png";
 import develop from "../../../images/projects/currency/develop.png";
-import utility from "../../../images/projects/currency/utilities.png";
 import "../../../styles/main.scss";
 
 // markup
@@ -355,40 +353,8 @@ const ProjectPage = () => {
                 every div inside of the component.
               </p>
               <img src={doc2} />
-              <h3>Developer Mode</h3>
-              <p>
-                Currency serves both designers and developers, and each page has
-                two states—design and develop, controlled by a toggle on the top
-                navigation of every page. As a majority of developers prefer a
-                darker background, the developer page changes into a 'dark mode'
-                to denote the difference between the two modes.
-              </p>
               <img src={develop} />
-              <p>
-                The content of the entire page also changes on Developer mode,
-                showcasing HTML markup with syntax highlighting and a copy to
-                clipboard button to make it easier for developers to use the
-                components.
-              </p>
               <img src={doc3} />
-              <h3>Brand Toggling</h3>
-              <p>
-                Aside from the design to developer toggle, the site also caters
-                to Wilmington Trust—completely switching the stylesheets into
-                the secondary brand of Currency.
-              </p>
-              <p>
-                The content of each page is written specifically for each brand,
-                and usage guidelines may differ between brands.
-              </p>
-              <img src={doc4} />
-              <h3>Utility Classes</h3>
-              <p>
-                Aside from components, Currency also provides various utility
-                classes for developers to use. The documentation sites out each
-                class, its values, and its functionality.
-              </p>
-              <img src={utility} />
             </section>
           </div>
         </div>

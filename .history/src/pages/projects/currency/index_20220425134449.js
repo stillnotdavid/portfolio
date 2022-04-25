@@ -385,8 +385,7 @@ const ProjectPage = () => {
               <h3>Utility Classes</h3>
               <p>
                 Aside from components, Currency also provides various utility
-                classes for developers to use. The documentation sites out each
-                class, its values, and its functionality.
+                classes for developers to use.
               </p>
               <img src={utility} />
             </section>

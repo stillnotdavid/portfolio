@@ -17,7 +17,6 @@ import doc2 from "../../../images/projects/currency/docsite02.png";
 import doc3 from "../../../images/projects/currency/docsite03.png";
 import doc4 from "../../../images/projects/currency/docsite04.png";
 import develop from "../../../images/projects/currency/develop.png";
-import utility from "../../../images/projects/currency/utilities.png";
 import "../../../styles/main.scss";
 
 // markup
@@ -377,18 +376,7 @@ const ProjectPage = () => {
                 to Wilmington Trust—completely switching the stylesheets into
                 the secondary brand of Currency.
               </p>
-              <p>
-                The content of each page is written specifically for each brand,
-                and usage guidelines may differ between brands.
-              </p>
               <img src={doc4} />
-              <h3>Utility Classes</h3>
-              <p>
-                Aside from components, Currency also provides various utility
-                classes for developers to use. The documentation sites out each
-                class, its values, and its functionality.
-              </p>
-              <img src={utility} />
             </section>
           </div>
         </div>
