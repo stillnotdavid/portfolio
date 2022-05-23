@@ -21,7 +21,6 @@ import wire04 from "../../../images/projects/sure-test/wire4.png";
 import wire05 from "../../../images/projects/sure-test/wire5.png";
 
 import header from "../../../images/projects/sure-test/header.png";
-import todo from "../../../images/projects/sure-test/todo.png";
 
 import "../../../styles/main.scss";
 
@@ -284,18 +283,11 @@ const ProjectPage = () => {
               <img src={header} />
               <p>
                 The header is pretty conventional, it includes a logo,
-                navigational links, and a user settings panel. It also includes
-                a notification component that helps users keep track of their
-                daily tasks.
+                navigational links, and a user settings panel.
               </p>
-            </section>
-
-            <section>
-              <h2>Component: To-Do List</h2>
-              <img src={todo} />
               <p>
-                The To-Do List components allows users to manage their tasks. It
-                can be added manually or generated via Meeting Notes.
+                It also includes a notification component that helps users keep
+                track of their daily tasks.
               </p>
             </section>
           </div>

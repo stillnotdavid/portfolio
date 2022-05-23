@@ -294,8 +294,10 @@ const ProjectPage = () => {
               <h2>Component: To-Do List</h2>
               <img src={todo} />
               <p>
-                The To-Do List components allows users to manage their tasks. It
-                can be added manually or generated via Meeting Notes.
+                The header is pretty conventional, it includes a logo,
+                navigational links, and a user settings panel. It also includes
+                a notification component that helps users keep track of their
+                daily tasks.
               </p>
             </section>
           </div>
