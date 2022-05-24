@@ -9,7 +9,6 @@ import userflow from "../../../images/projects/sure-test/user-flow.png";
 
 import home from "../../../images/projects/sure-test/home.png";
 import meeting from "../../../images/projects/sure-test/meeting.png";
-import meeting2 from "../../../images/projects/sure-test/meeting2.png";
 import calendar from "../../../images/projects/sure-test/calendar.png";
 import calendar2 from "../../../images/projects/sure-test/calendar2.png";
 import profile from "../../../images/projects/sure-test/profile.png";
@@ -21,7 +20,6 @@ import wire04 from "../../../images/projects/sure-test/wire4.png";
 import wire05 from "../../../images/projects/sure-test/wire5.png";
 
 import header from "../../../images/projects/sure-test/header.png";
-import scaling from "../../../images/projects/sure-test/scaling.png";
 import todo from "../../../images/projects/sure-test/todo.png";
 import components from "../../../images/projects/sure-test/components.png";
 
@@ -264,7 +262,6 @@ const ProjectPage = () => {
                 Because the product is not meant to replace Zoom, a link to the
                 actual Zoom (or Webex, Slack, etc) meeting is available.
               </p>
-              <img src={meeting2} />
             </section>
             <section>
               <h2>
@@ -304,10 +301,6 @@ const ProjectPage = () => {
                 The To-Do List components allows users to manage their tasks. It
                 can be added manually or generated via Meeting Notes.
               </p>
-            </section>
-            <section>
-              <h2>Scaling</h2>
-              <img src={scaling} />
             </section>
           </div>
         </div>
