@@ -1,27 +1,27 @@
-import * as React from "react";
-import { Logo } from "../../../components";
-import "./style.scss";
+import * as React from 'react';
+import { Logo } from '../../../components';
+import './style.scss';
 
-import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
-import { Helmet } from "react-helmet";
+// import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
+import { Helmet } from 'react-helmet';
 
-import status from "../../../images/projects/esea-client/status.png";
-import after from "../../../images/projects/esea-client/02.png";
-import hero from "../../../images/projects/esea-client/hero.png";
-import buddyList from "../../../images/projects/esea-client/buddy-list.png";
-import achievements from "../../../images/projects/esea-client/unlock.png";
-import lobby from "../../../images/projects/esea-client/lobby.png";
-import skins from "../../../images/projects/esea-client/skins.png";
-import code from "../../../images/projects/esea-client/code.png";
-import branding from "../../../images/projects/esea-client/branding.png";
-import components from "../../../images/projects/esea-client/components.png";
-import backgrounds from "../../../images/projects/esea-client/background.png";
-import lobbySettings from "../../../images/projects/esea-client/lobby-settings.png";
+import status from '../../../images/projects/esea-client/status.png';
+import after from '../../../images/projects/esea-client/02.png';
+import hero from '../../../images/projects/esea-client/hero.png';
+import buddyList from '../../../images/projects/esea-client/buddy-list.png';
+import achievements from '../../../images/projects/esea-client/unlock.png';
+import lobby from '../../../images/projects/esea-client/lobby.png';
+import skins from '../../../images/projects/esea-client/skins.png';
+import code from '../../../images/projects/esea-client/code.png';
+import branding from '../../../images/projects/esea-client/branding.png';
+import components from '../../../images/projects/esea-client/components.png';
+import backgrounds from '../../../images/projects/esea-client/background.png';
+import lobbySettings from '../../../images/projects/esea-client/lobby-settings.png';
 
-import "../../../styles/main.scss";
+import '../../../styles/main.scss';
 
 const SECOND_IMAGE = {
-  imageUrl: "images/projects/edward/hero.png",
+  imageUrl: 'images/projects/edward/hero.png',
 };
 // markup
 const ProjectPage = () => {
@@ -91,7 +91,7 @@ const ProjectPage = () => {
           <div className="project__body">
             <section className="before-after">
               <h2>Before &amp; After</h2>
-              <SimpleReactLightbox>
+              {/* <SimpleReactLightbox>
                 <SRLWrapper>
                   <img
                     className="before-after__image"
@@ -99,7 +99,7 @@ const ProjectPage = () => {
                   />
                   <img className="before-after__image" src={after} />
                 </SRLWrapper>
-              </SimpleReactLightbox>
+              </SimpleReactLightbox> */}
             </section>
 
             <section>

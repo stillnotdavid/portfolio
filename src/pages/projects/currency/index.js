@@ -1,24 +1,24 @@
-import * as React from "react";
-import { Logo } from "../../../components";
-import "./style.scss";
+import * as React from 'react';
+import { Logo } from '../../../components';
+import './style.scss';
 
-import { Helmet } from "react-helmet";
+import { Helmet } from 'react-helmet';
 
-import hero from "../../../images/projects/currency/hero.png";
-import brands from "../../../images/projects/currency/currency-brands.png";
-import buttons from "../../../images/projects/currency/buttons.png";
-import tokens from "../../../images/projects/currency/tokens.png";
-import components from "../../../images/projects/currency/components.png";
-import variants from "../../../images/projects/currency/variants.png";
-import patterns from "../../../images/projects/currency/patterns.png";
-import prototypes from "../../../images/projects/currency/prototypes.png";
-import doc from "../../../images/projects/currency/docsite01.png";
-import doc2 from "../../../images/projects/currency/docsite02.png";
-import doc3 from "../../../images/projects/currency/docsite03.png";
-import doc4 from "../../../images/projects/currency/docsite04.png";
-import develop from "../../../images/projects/currency/develop.png";
-import utility from "../../../images/projects/currency/utilities.png";
-import "../../../styles/main.scss";
+import hero from '../../../images/projects/currency/hero.png';
+import brands from '../../../images/projects/currency/currency-brands.png';
+import buttons from '../../../images/projects/currency/buttons.png';
+import tokens from '../../../images/projects/currency/tokens.png';
+import components from '../../../images/projects/currency/components.png';
+import variants from '../../../images/projects/currency/variants.png';
+import patterns from '../../../images/projects/currency/patterns.png';
+import prototypes from '../../../images/projects/currency/prototypes.png';
+import doc from '../../../images/projects/currency/docsite01.png';
+import doc2 from '../../../images/projects/currency/docsite02.png';
+import doc3 from '../../../images/projects/currency/docsite03.png';
+import doc4 from '../../../images/projects/currency/docsite04.png';
+import develop from '../../../images/projects/currency/develop.png';
+import utility from '../../../images/projects/currency/utilities.png';
+import '../../../styles/main.scss';
 
 // markup
 const ProjectPage = () => {
@@ -45,7 +45,7 @@ const ProjectPage = () => {
             <div className="project__overview">
               <h2>Overview</h2>
               <p>
-                Currency is the official design system of{" "}
+                Currency is the official design system of{' '}
                 <a href="https://mtb.com">M&amp;T Bank</a>, used by numerous
                 design and engineering teams. It is comprised of three parts,
                 the Figma component library, the codebase, and the documentation
@@ -303,8 +303,8 @@ const ProjectPage = () => {
               <p>
                 The most generic example of tokens are colors, spacing, and
                 typography, but they extend beyond the initial level and can
-                nest upon one another. For example, while{" "}
-                <code>$colorPrimary</code> may be a token,{" "}
+                nest upon one another. For example, while{' '}
+                <code>$colorPrimary</code> may be a token,{' '}
                 <code>$buttonBackgroundColor</code> is also a token that calls
                 on <code>$colorPrimary</code>, although the latter is an atomic
                 token, as opposed to a base token.

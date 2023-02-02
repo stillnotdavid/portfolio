@@ -1,25 +1,25 @@
-import * as React from "react";
-import { Logo } from "../../../components";
-import "./style.scss";
+import * as React from 'react';
+import { Logo } from '../../../components';
+import './style.scss';
 
-import { Helmet } from "react-helmet";
-import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
+import { Helmet } from 'react-helmet';
+// import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
 
-import before from "../../../images/projects/edward/before.jpg";
-import after from "../../../images/projects/edward/after.jpeg";
-import hero from "../../../images/projects/edward/hero.png";
-import userflow from "../../../images/projects/edward/userflow.png";
-import visuals from "../../../images/projects/edward/visual.png";
-import findRooms from "../../../images/projects/edward/find-rooms.jpg";
-import newRooms from "../../../images/projects/edward/new-rooms.jpg";
-import gallery from "../../../images/projects/edward/gallery.jpg";
-import portal from "../../../images/projects/edward/portal.jpg";
-import mobile from "../../../images/projects/edward/mobile.png";
-import code from "../../../images/projects/edward/code.png";
-import "../../../styles/main.scss";
+import before from '../../../images/projects/edward/before.jpg';
+import after from '../../../images/projects/edward/after.jpeg';
+import hero from '../../../images/projects/edward/hero.png';
+import userflow from '../../../images/projects/edward/userflow.png';
+import visuals from '../../../images/projects/edward/visual.png';
+import findRooms from '../../../images/projects/edward/find-rooms.jpg';
+import newRooms from '../../../images/projects/edward/new-rooms.jpg';
+import gallery from '../../../images/projects/edward/gallery.jpg';
+import portal from '../../../images/projects/edward/portal.jpg';
+import mobile from '../../../images/projects/edward/mobile.png';
+import code from '../../../images/projects/edward/code.png';
+import '../../../styles/main.scss';
 
 const SECOND_IMAGE = {
-  imageUrl: "images/projects/edward/hero.png",
+  imageUrl: 'images/projects/edward/hero.png',
 };
 // markup
 const ProjectPage = () => {
@@ -96,19 +96,19 @@ const ProjectPage = () => {
           <div className="project__body">
             <section className="before-after">
               <h2>Before &amp; After</h2>
-              <SimpleReactLightbox>
-                <SRLWrapper>
-                  <img className="before-after__image" src={before} />
-                  <img className="before-after__image" src={after} />
-                </SRLWrapper>
-              </SimpleReactLightbox>
+              {/* <SimpleReactLightbox>
+                <SRLWrapper> */}
+              <img className="before-after__image" src={before} />
+              <img className="before-after__image" src={after} />
+              {/* </SRLWrapper>
+              </SimpleReactLightbox> */}
             </section>
             <div className="grid">
               <section>
                 <h2>Initial Thoughts</h2>
                 <p>
                   The major problem the client had with the current website was
-                  that it did not look <strong>modern or professional</strong>{" "}
+                  that it did not look <strong>modern or professional</strong>{' '}
                   enough. This would naturally be solved in a redesign, as from
                   a design standpoint, it is the most straight forward problem
                   to solve. However:

@@ -1,10 +1,10 @@
-import * as React from "react";
+import * as React from 'react';
 
-import { useStaticQuery, graphql } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
+import { useStaticQuery, graphql } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+// import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
 
-import "../../../styles/main.scss";
+import '../../../styles/main.scss';
 
 // markup
 const ProjectPage = () => {
@@ -31,17 +31,17 @@ const ProjectPage = () => {
 
   return (
     <div>
-      <SimpleReactLightbox>
-        <div className="container">
-          <div className="project__gallery">
-            <SRLWrapper>
-              {allFile.edges.map((images) => (
-                <GatsbyImage image={getImage(images.node)} />
-              ))}
-            </SRLWrapper>
-          </div>
+      {/* <SimpleReactLightbox> */}
+      <div className="container">
+        <div className="project__gallery">
+          {/* <SRLWrapper> */}
+          {allFile.edges.map((images) => (
+            <GatsbyImage image={getImage(images.node)} />
+          ))}
+          {/* </SRLWrapper> */}
         </div>
-      </SimpleReactLightbox>
+      </div>
+      {/* </SimpleReactLightbox> */}
     </div>
   );
 };

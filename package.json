@@ -19,6 +19,7 @@
     "@fortawesome/react-fontawesome": "^0.1.16",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "@mkitio/gatsby-theme-password-protect": "^2.1.2",
     "@trendyol-js/react-carousel": "^2.0.1",
     "animate.css": "^4.1.1",
     "gatsby": "^4.1.0",
@@ -39,7 +40,6 @@
     "react-helmet": "^6.1.0",
     "react-scroll": "^1.8.4",
     "react-tsparticles": "^1.43.1",
-    "sass": "^1.45.0",
-    "simple-react-lightbox": "^3.6.9-0"
+    "sass": "^1.45.0"
   }
 }

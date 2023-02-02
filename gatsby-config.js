@@ -1,37 +1,45 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: 'https://www.yourdomain.tld',
     title: "David Le's Portfolio",
+    name: 'robots',
+    content: 'noindex, follow',
   },
   plugins: [
-    "gatsby-plugin-sass",
-    "gatsby-plugin-image",
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: '@mkitio/gatsby-theme-password-protect',
       options: {
-        trackingId: "UA-61270580-1",
+        password: 'redvelvet',
       },
     },
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
-    "gatsby-plugin-mdx",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
+    'gatsby-plugin-sass',
+    'gatsby-plugin-image',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        name: "images",
-        path: "./src/images/",
+        trackingId: 'UA-61270580-1',
       },
-      __key: "images",
+    },
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-mdx',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: './src/images/',
+      },
+      __key: 'images',
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        name: 'pages',
+        path: './src/pages/',
       },
-      __key: "pages",
+      __key: 'pages',
     },
   ],
 };
