@@ -1,0 +1,129 @@
+@import "../../../styles/variables.scss";
+
+$_avatar-size: 125px;
+
+.profile-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background: white;
+  border-radius: 4px;
+  @include shadow-md();
+
+  @media (min-width: $screen-md) {
+    width: 350px;
+  }
+
+  &__header {
+    background: $gray-lightest;
+    display: flex;
+    align-items: center;
+    border-radius: 4px 4px 0 0;
+    padding: $spacing-md 0;
+
+    &-image {
+      height: $_avatar-size;
+      width: $_avatar-size;
+      border-radius: 50%;
+      object-fit: cover;
+      border: solid 5px $gray-light;
+      margin: -$spacing-xl $spacing-lg;
+
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+
+    &-name {
+      color: $gray-dark;
+      font-size: $font-xl;
+      font-weight: $font-bold;
+      margin-bottom: $spacing-xs;
+    }
+
+    &-location {
+      color: $gray;
+      font-size: $font-sm;
+    }
+  }
+
+  &__body {
+    padding: $spacing-xl;
+    display: flex;
+    flex-direction: column;
+
+    &-facts {
+      margin-bottom: $spacing-lg;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:first-child {
+        margin-top: $spacing-lg;
+      }
+    }
+
+    &-category {
+      color: $gray;
+      font-size: $font-xs;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: $spacing-sm;
+    }
+
+    &-info {
+      color: $gray-dark;
+      font-size: $font-md;
+      font-weight: $font-semibold;
+      line-height: 1.25;
+    }
+  }
+
+  &__tldr {
+    color: $gray-dark;
+    font-size: $font-sm;
+    font-weight: $font-bold;
+    margin: (-$spacing-md) (-$spacing-md) $spacing-lg auto;
+    display: flex;
+  }
+
+  &__switch {
+    display: flex;
+    align-items: center;
+    background: $gray;
+    height: 15px;
+    width: 35px;
+    border-radius: 50px;
+    position: relative;
+    margin-left: $spacing-md;
+    transition: 100ms;
+    cursor: pointer;
+    &:hover {
+      .profile-card__switch-toggle {
+        transform: scale(1.1);
+      }
+    }
+
+    &-toggle {
+      background: $gray-medium;
+      height: 20px;
+      width: 20px;
+      border-radius: 50px;
+      @include shadow-sm;
+      position: absolute;
+      transition: 100ms;
+      left: 0;
+    }
+
+    &--on {
+      background: #9cd066;
+
+      .profile-card__switch-toggle {
+        background: #74ae37;
+        left: 15px;
+      }
+    }
+  }
+}

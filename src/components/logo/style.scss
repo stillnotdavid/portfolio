@@ -1,0 +1,8 @@
+@import "../../styles/variables.scss";
+
+.logo {
+  margin: $spacing-lg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
